@@ -3,7 +3,7 @@ import React from 'react'
 const Shop = () => {
     return (
         <div>
-            <h2>Buy Puna Shoes 50 Rs</h2>
+            <h2>Deposit/Withdraw Money</h2>
             <button className="btn btn-primary mx-2">-</button>
             Add to cart
             <button className="btn btn-primary mx-2">+</button>
