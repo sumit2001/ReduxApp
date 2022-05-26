@@ -1,5 +1,4 @@
-import { applyMiddleware, createStore } from "redux";
-import thunk from "redux-thunk";
-import reducers from "./reducers";
+import { configureStore } from '@reduxjs/toolkit'
 
-export const store = createStore(reducers, {}, applyMiddleware(thunk))
+import moneyReducer from './action-creators/index'
+export const store = configureStore({ reducer: { transact: moneyReducer } })

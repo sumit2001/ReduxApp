@@ -2,7 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 const Navbar = () => {
-    const amount = useSelector(state => state.amount);
+    const amount = useSelector((state) => state.transact.payload)
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-light">
